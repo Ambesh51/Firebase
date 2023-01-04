@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button'
 import {FirebaseAuth} from '../context/Firebase';
 import {signInWithEmailAndPassword} from "firebase/auth"
 
@@ -25,7 +26,7 @@ console.log("firebase",FirebaseAuth)
         <input type="email" placeholder='email' value={email}  autoComplete="email" onChange={(e)=>{setEmail(e.target.value)}} />
         <label>Enter your password</label>
         <input type="password" placeholder='password' value={password} autoComplete="password"  onChange={(e)=>{setPassword(e.target.value)}}/>
-        <button onClick={(e)=>{SigninUser(e)}}> Signin me in </button>
+        <Button variant='success' onClick={(e)=>{SigninUser(e)}}> Signin me in </Button>
         </form>
         </div>
     )

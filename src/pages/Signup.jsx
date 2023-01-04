@@ -1,6 +1,8 @@
 import { useFirebase,FirebaseAuth } from '../context/Firebase';
 import { useState } from 'react';
 import {GoogleAuthProvider, signInWithPopup} from "firebase/auth" //SignUp by Google
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
 function SignUp() {
   const firebase = useFirebase()
